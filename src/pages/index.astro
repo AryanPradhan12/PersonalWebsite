@@ -6,17 +6,16 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   <section class="hero card">
     <div>
       <div class="kicker">About Me</div>
-      <h1 class="h1">Hi, I'm Aryan — I build data-driven things.</h1>
+      <h1 class="h1">Hi, I'm Aryan Pradhan — a data science enthusiast.</h1>
       <p class="p">
-        I’m an IB student passionate about computer science, deep learning, and basketball.
-        This site collects my projects, research, and reflections.
+        I’m an IB student passionate about data science, computer science, and basketball.
+        This site collects my projects, research, accomplishments, and reflections.
       </p>
 
       <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
         <a class="btn" href="/accomplishments">View Accomplishments (Table of Contents)</a>
-        <span class="tag">IB Computer Science</span>
+        <span class="tag">Computer Science</span>
         <span class="tag">Data Science</span>
-        <span class="tag">Basketball</span>
       </div>
     </div>
   </section>
@@ -37,13 +36,19 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     <section class="timeline">
 
       <!-- INTRO -->
-      <article id="intro" class="t-section card">
-        <div class="t-node" aria-hidden="true"></div>
-        <h2 class="t-title">Intro</h2>
-        <p class="p">
-          Quick bio placeholder — swap with your 3–4 sentence story. You can add a small image on the right later if you want.
-        </p>
-      </article>
+<article id="intro" class="t-section card intro-flex">
+  <div class="t-node" aria-hidden="true"></div>
+  <div class="intro-text">
+    <h2 class="t-title">Intro</h2>
+    <p class="p">
+      I’m Aryan Pradhan, an IB student in Dubai with a passion for using data to solve real-world problems. Whether it’s modeling the physics of a basketball free throw, building apps that support mental wellbeing, or experimenting with deep learning models to analyze language, I enjoy bridging disciplines that don’t often meet. Beyond academics, I’ve taken leadership roles in school initiatives and projects, and I balance my love for science with a lifelong dedication to basketball. This mix of curiosity, creativity, and collaboration defines both my learning and the way I approach challenges.
+    </p>
+  </div>
+  <div class="intro-image">
+    <img src="/images/aryan.png" alt="Aryan Pradhan" />
+  </div>
+</article>
+
 
       <!-- HIGHLIGHTS -->
       <article id="highlights" class="t-section card">
@@ -51,8 +56,11 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         <h2 class="t-title">Highlights</h2>
         <ul class="t-list">
           <li>Student Mental Health App (SwiftUI + Firebase)</li>
-          <li>CNN vs RNN dialect classification research</li>
-          <li>Basketball free-throw modeling (calculus/drag)</li>
+          <li>MYP curriculum support website (javascript)</li>
+          <li>Comparison of polynomial, ridge, and random forest regressors on health cost prediction (research paper)</li>
+          <li>Exploration of support vector machines and random forests in orange fruit disease detection (image classification research paper)</li>
+          <li>Evaluation of machine learning in aerospace engineering (literature review)</li>
+          <li>Sport schedule modeling paper (mathematical modelling paper)</li>
         </ul>
       </article>
 
@@ -67,6 +75,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
           <div class="pill">Firebase</div>
           <div class="pill">Calculus Modeling</div>
           <div class="pill">Data Visualization</div>
+          <div class="pill">Java</div>
+          <div class="pill">Javascript</div>
+          <div class="pill">Machine Learning / Deep Learning</div>
+          <div class="pill">Software development</div>
         </div>
       </article>
 
@@ -75,7 +87,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         <div class="t-node" aria-hidden="true"></div>
         <h2 class="t-title">Interests</h2>
         <p class="p">
-          Interdisciplinary work across CS, physics, economics — and a lifelong love for basketball.
+          Interdisciplinary work across data science/computer science, physics, economics, math — and a lifelong love for basketball.
         </p>
       </article>
 
