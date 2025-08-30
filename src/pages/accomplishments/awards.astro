@@ -1,8 +1,96 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import Lightbox from "../../components/Lightbox.astro";
 ---
-<BaseLayout title="Internships • Aryan Pradhan" active="accomplishments">
+<BaseLayout title="Courses & Certifications • Aryan Pradhan" active="accomplishments">
   <a class="tag" href="/accomplishments">← Back to all categories</a>
-  <h1 class="h1" style="margin-top:10px">Internships</h1>
-  <p class="p">Add entries with proof links/images here.</p>
+  <h1 class="h1" style="margin-top:10px">Courses & Certifications</h1>
+  <p class="p">
+    A collection of certifications, coursework, and awards that reflect my learning journey inside and outside the classroom.
+  </p>
+
+    <!-- Economics Excellence -->
+    <article class="card">
+      <div class="kicker">School Award</div>
+      <h3 style="margin:6px 0 8px">Economics Excellence (Year 12)</h3>
+      <p class="p">Recognized twice for outstanding academic performance in Economics.</p>
+      <Lightbox src="/images/Economics1.png" label="View Certificate 1" />
+      <Lightbox src="/images/Economics2.png" label="View Certificate 2" />
+    </article>
+
+    <!-- French Excellence -->
+    <article class="card">
+      <div class="kicker">School Award</div>
+      <h3 style="margin:6px 0 8px">French Excellence (Year 12)</h3>
+      <p class="p">Recognized twice for outstanding academic performance in French.</p>
+      <Lightbox src="/images/French1.png" label="View Certificate 1" />
+      <Lightbox src="/images/French2.png" label="View Certificate 2" />
+    </article>
+
+    <!-- MYP Academic Excellence -->
+    <article class="card">
+      <div class="kicker">School Award</div>
+      <h3 style="margin:6px 0 8px">MYP Academic Excellence</h3>
+      <p class="p">Awarded for overall academic excellence during the MYP years.</p>
+      <Lightbox src="/images/MYPExcellence.png" label="View Certificate" />
+    </article>
+
+    <!-- CS Excellence -->
+    <article class="card">
+      <div class="kicker">School Award</div>
+      <h3 style="margin:6px 0 8px">Computer Science Excellence (Year 12)</h3>
+      <p class="p">Recognized for exceptional coursework and projects in Computer Science.</p>
+      <Lightbox src="/images/CS.png" label="View Certificate" />
+    </article>
+
+    <!-- UKMC -->
+    <article class="card">
+      <div class="kicker">Math Competition</div>
+      <h3 style="margin:6px 0 8px">UKMC Silver</h3>
+      <p class="p">Earned Silver recognition in the UK Math Challenge (mathematical modelling competition).</p>
+      <a class="btn" href="/docs/UKMC.pdf" target="_blank" rel="noopener">View Certificate</a>
+    </article>
+
+    <!-- Fermat -->
+    <article class="card">
+      <div class="kicker">Math Competition</div>
+      <h3 style="margin:6px 0 8px">Fermat Contest Distinction</h3>
+      <p class="p">Achieved distinction in the Fermat mathematics competition (University of Waterloo).</p>
+      <Lightbox src="/images/Fermat.png" label="View Certificate" />
+    </article>
+
+    <!-- Algebra Contest -->
+    <article class="card">
+      <div class="kicker">Math Competition</div>
+      <h3 style="margin:6px 0 8px">Algebra Contest Distinction</h3>
+      <p class="p">Awarded distinction for performance in the Math League Algebra contest.</p>
+      <Lightbox src="/images/Algebra.png" label="View Certificate" />
+    </article>
+
+    <!-- HPE Coding -->
+    <article class="card">
+      <div class="kicker">Programming Contest</div>
+      <h3 style="margin:6px 0 8px">HPE Coding Challenge</h3>
+      <p class="p">Ranked 34/6131 in the Hewlett Packard Enterprise global coding challenge (won 500 rupees).</p>
+      <a class="btn" href="/docs/HPE.pdf" target="_blank" rel="noopener">View Certificate</a>
+    </article>
+
+    <!-- WSG -->
+    <article class="card">
+      <div class="kicker">Sports Award</div>
+      <h3 style="margin:6px 0 8px">World School Games Basketball</h3>
+      <p class="p">Represented school basketball team as the captain.</p>
+      <Lightbox src="/images/wsg-gold.png" label="View Gold Medal (2023)" />
+      <Lightbox src="/images/wsg-silver.png" label="View Silver Medal (2022)" />
+    </article>
+
+    <!-- WEC -->
+    <article class="card">
+      <div class="kicker">Economics Competition</div>
+      <h3 style="margin:6px 0 8px">World Economics Cup</h3>
+      <p class="p">Achieved Higher Distinction and Team Silver in WEC competition.</p>
+      <Lightbox src="/images/WECDistinction.png" label="View Certificate of Personal Higher Distinction" />
+      <Lightbox src="/images/WECTeam.png" label="View Certificate of Team Silver" />
+    </article>
+  </div>
 </BaseLayout>

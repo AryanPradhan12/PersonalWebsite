@@ -1,8 +1,33 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import Lightbox from "../../components/Lightbox.astro";
 ---
-<BaseLayout title="Internships • Aryan Pradhan" active="accomplishments">
+<BaseLayout title="Courses • Aryan Pradhan" active="accomplishments">
   <a class="tag" href="/accomplishments">← Back to all categories</a>
-  <h1 class="h1" style="margin-top:10px">Internships</h1>
-  <p class="p">Add entries with proof links/images here.</p>
+  <h1 class="h1" style="margin-top:10px">Courses</h1>
+  <p class="p">
+    Selected coursework that built practical skills in data science and AI.
+  </p>
+
+  <div class="grid" style="margin-top:16px">
+    <!-- Pandas Course -->
+    <article class="card">
+      <div class="kicker">Data Science</div>
+      <h3 style="margin:6px 0 8px">Pandas Programming Course</h3>
+      <p class="p">Completed a structured course on Pandas for data analysis in Python.</p>
+      <div style="margin-top:8px">
+        <Lightbox src="/images/Pandas.png" label="View Certificate" />
+      </div>
+    </article>
+
+    <!-- Microsoft AI -->
+    <article class="card">
+      <div class="kicker">Artificial Intelligence</div>
+      <h3 style="margin:6px 0 8px">Microsoft AI Fundamentals</h3>
+      <p class="p">Earned Microsoft certification covering ML, AI ethics, and cloud applications.</p>
+      <div style="margin-top:8px">
+        <Lightbox src="/images/MicrosoftAI.png" label="View Certificate" />
+      </div>
+    </article>
+  </div>
 </BaseLayout>
