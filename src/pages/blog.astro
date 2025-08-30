@@ -2,14 +2,27 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 <BaseLayout title="Blog • Aryan Pradhan" active="blog">
-  <h1 class="h1">Blog</h1>
-  <p class="p">Short notes on projects, ideas, and learning. Posts coming soon.</p>
+  <a class="tag" href="/">← Back to Home</a>
+  <h1 class="h1" style="margin-top:10px">Blog</h1>
+  <p class="p">
+    I’m Aryan Pradhan, a high school student passionate about computer science and data science. 
+    This blog is where I share my journey — from projects and experiments to lessons learned and 
+    insights gained along the way. My goal is to make my explorations accessible, so that anyone 
+    curious about these fields can learn alongside me.
+  </p>
 
   <div class="grid" style="margin-top:16px">
+    <!-- Blog Home -->
     <article class="card">
-      <div class="kicker">Placeholder</div>
-      <h3 style="margin:6px 0 8px">Hello World</h3>
-      <p class="p">Your first post could go here. Create more as separate <code>.astro</code> or <code>.md</code> files later.</p>
+      <div class="kicker">Personal Blog</div>
+      <h3 style="margin:6px 0 8px">Explore My Blog</h3>
+      <p class="p">
+        Read my posts covering topics in computer science, data science, and my personal experiences 
+        as I explore these fields.
+      </p>
+      <a class="btn" href="https://aryan0282.wordpress.com/" target="_blank" rel="noopener">
+        Visit Blog
+      </a>
     </article>
   </div>
 </BaseLayout>
