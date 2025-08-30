@@ -1,0 +1,95 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+<BaseLayout title="About • Aryan Pradhan" active="home">
+  <!-- HERO -->
+  <section class="hero card">
+    <div>
+      <div class="kicker">About Me</div>
+      <h1 class="h1">Hi, I'm Aryan — I build data-driven things.</h1>
+      <p class="p">
+        I’m an IB student passionate about computer science, deep learning, and basketball.
+        This site collects my projects, research, and reflections.
+      </p>
+
+      <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
+        <a class="btn" href="/accomplishments">View Accomplishments (Table of Contents)</a>
+        <span class="tag">IB Computer Science</span>
+        <span class="tag">Data Science</span>
+        <span class="tag">Basketball</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SIDE TOC + VERTICAL FLOW -->
+  <div class="about-shell">
+    <aside class="about-toc card">
+      <div class="kicker">On this page</div>
+      <nav>
+        <a href="#intro">Intro</a>
+        <a href="#highlights">Highlights</a>
+        <a href="#skills">Skills</a>
+        <a href="#interests">Interests</a>
+        <a href="#cta">What’s next</a>
+      </nav>
+    </aside>
+
+    <section class="timeline">
+
+      <!-- INTRO -->
+      <article id="intro" class="t-section card">
+        <div class="t-node" aria-hidden="true"></div>
+        <h2 class="t-title">Intro</h2>
+        <p class="p">
+          Quick bio placeholder — swap with your 3–4 sentence story. You can add a small image on the right later if you want.
+        </p>
+      </article>
+
+      <!-- HIGHLIGHTS -->
+      <article id="highlights" class="t-section card">
+        <div class="t-node" aria-hidden="true"></div>
+        <h2 class="t-title">Highlights</h2>
+        <ul class="t-list">
+          <li>Student Mental Health App (SwiftUI + Firebase)</li>
+          <li>CNN vs RNN dialect classification research</li>
+          <li>Basketball free-throw modeling (calculus/drag)</li>
+        </ul>
+      </article>
+
+      <!-- SKILLS -->
+      <article id="skills" class="t-section card">
+        <div class="t-node" aria-hidden="true"></div>
+        <h2 class="t-title">Skills</h2>
+        <div class="grid">
+          <div class="pill">Python / Pandas / Scikit-learn</div>
+          <div class="pill">SwiftUI</div>
+          <div class="pill">React</div>
+          <div class="pill">Firebase</div>
+          <div class="pill">Calculus Modeling</div>
+          <div class="pill">Data Visualization</div>
+        </div>
+      </article>
+
+      <!-- INTERESTS -->
+      <article id="interests" class="t-section card">
+        <div class="t-node" aria-hidden="true"></div>
+        <h2 class="t-title">Interests</h2>
+        <p class="p">
+          Interdisciplinary work across CS, physics, economics — and a lifelong love for basketball.
+        </p>
+      </article>
+
+      <!-- CTA -->
+      <article id="cta" class="t-section card">
+        <div class="t-node" aria-hidden="true"></div>
+        <h2 class="t-title">What’s next</h2>
+        <p class="p">
+          See my <a href="/accomplishments">Accomplishments</a> to browse leadership, research, internships, courses,
+          arts & creativity, and competitions/awards.
+        </p>
+        <a class="btn" href="/accomplishments">Open Table of Contents</a>
+      </article>
+
+    </section>
+  </div>
+</BaseLayout>

@@ -1,0 +1,17 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { categories } from "../../data/categories";
+---
+<BaseLayout title="Accomplishments • Table of Contents" active="accomplishments">
+  <h1 class="h1">Accomplishments</h1>
+  <p class="p">Browse by category. Each card links to a dedicated page you can fill later.</p>
+
+  <div class="grid" style="margin-top:16px">
+    {categories.map(cat => (
+      <a class="card" href={`/accomplishments/${cat.slug}`}>
+        <div class="kicker">{cat.title}</div>
+        <p class="p" style="margin-top:8px">{cat.blurb}</p>
+      </a>
+    ))}
+  </div>
+</BaseLayout>

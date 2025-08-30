@@ -1,0 +1,34 @@
+---
+const { title = "Aryan Pradhan", description = "Student • Data Science • Basketball", active = "" } = Astro.props;
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles/global.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/">AP</a>
+      <nav class="nav">
+        <a class={active === "home" ? "active" : ""} href="/">About</a>
+        <a class={active === "accomplishments" ? "active" : ""} href="/accomplishments">Accomplishments</a>
+        <a href="/blog">Blog</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <small>© {new Date().getFullYear()} Aryan Pradhan</small>
+    </footer>
+  </body>
+</html>
