@@ -1,8 +1,29 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 ---
-<BaseLayout title="Internships • Aryan Pradhan" active="accomplishments">
+<BaseLayout title="Community Service • Aryan Pradhan" active="accomplishments">
   <a class="tag" href="/accomplishments">← Back to all categories</a>
-  <h1 class="h1" style="margin-top:10px">Internships</h1>
-  <p class="p">Add entries with proof links/images here.</p>
+  <h1 class="h1" style="margin-top:10px">Community Service</h1>
+  <p class="p">
+    I love teaching what I learn. Turning complex topics into approachable lessons helps me deepen my own understanding
+    while opening doors for others—especially students who may not have access to guided, practical paths into data science
+    and computing. My courses focus on clarity, real-world context, and hands-on practice.
+  </p>
+
+  <div class="grid" style="margin-top:16px">
+    <!-- Udemy Instructor Profile -->
+    <article class="card">
+      <div class="kicker">Courses & Teaching</div>
+      <h3 style="margin:6px 0 8px">Udemy Instructor Profile</h3>
+      <p class="p">
+        Browse my courses, syllabi, and learner reviews. I regularly update content to reflect best practices and the
+        newest tooling in data science and software engineering.
+      </p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:8px">
+        <a class="btn" href="https://www.udemy.com/user/aryan-pradhan-24/" target="_blank" rel="noopener">View Udemy Profile</a>
+        <!-- If you create a PDF syllabus/teaching statement later, add it here -->
+        <!-- <a class="btn" href="/docs/teaching-statement.pdf" target="_blank" rel="noopener">Teaching Statement (PDF)</a> -->
+      </div>
+    </article>
+  </div>
 </BaseLayout>
