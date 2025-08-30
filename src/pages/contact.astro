@@ -1,8 +1,9 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+const base = import.meta.env.BASE_URL;
 ---
 <BaseLayout title="Contact • Aryan Pradhan" active="contact">
-  <a class="tag" href="/">← Back to Home</a>
+  <a class="tag" href={`${base}`}>← Back to Home</a>
   <h1 class="h1" style="margin-top:10px">Contact Me</h1>
   <p class="p">
     Feel free to reach out to me through email or Instagram. I also manage initiatives like

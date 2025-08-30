@@ -1,8 +1,11 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+const base = import.meta.env.BASE_URL;
 ---
+
+
 <BaseLayout title="Internships • Aryan Pradhan" active="accomplishments">
-  <a class="tag" href="/accomplishments">← Back to all categories</a>
+  <a class="tag" href={`${base}accomplishments`}>← Back to all categories</a>
   <h1 class="h1" style="margin-top:10px">Internships</h1>
   <p class="p">Virtual experience programs and internships with certificate proofs.</p>
 
@@ -19,25 +22,25 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
         <li>
           <b>Mastercard</b>
           <div style="margin-top:6px; display:flex; gap:10px; flex-wrap:wrap">
-            <a class="btn" href="/docs/MasterCard.pdf" target="_blank" rel="noopener">Certificate (PDF)</a>
+            <a class="btn" href={`${base}docs/MasterCard.pdf`} target="_blank" rel="noopener">Certificate (PDF)</a>
           </div>
         </li>
         <li>
           <b>Amazon Web Services (AWS)</b>
           <div style="margin-top:6px; display:flex; gap:10px; flex-wrap:wrap">
-            <a class="btn" href="/docs/AWS.pdf" target="_blank" rel="noopener">Certificate (PDF)</a>
+            <a class="btn" href={`${base}docs/AWS.pdf`} target="_blank" rel="noopener">Certificate (PDF)</a>
           </div>
         </li>
         <li>
           <b>Accenture</b>
           <div style="margin-top:6px; display:flex; gap:10px; flex-wrap:wrap">
-            <a class="btn" href="/docs/Accenture.pdf" target="_blank" rel="noopener">Certificate (PDF)</a>
+            <a class="btn" href={`${base}docs/Accenture.pdf`} target="_blank" rel="noopener">Certificate (PDF)</a>
           </div>
         </li>
         <li>
           <b>J.P. Morgan & Chase</b>
           <div style="margin-top:6px; display:flex; gap:10px; flex-wrap:wrap">
-            <a class="btn" href="/docs/JPMorgan.pdf" target="_blank" rel="noopener">Certificate (PDF)</a>
+            <a class="btn" href={`${base}docs/JPMorgan.pdf`} target="_blank" rel="noopener">Certificate (PDF)</a>
           </div>
         </li>
       </ul>
@@ -51,9 +54,9 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
         Hands-on projects with data pipelines and model experimentation powered by TransOrg Analytics.
       </p>
       <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:8px">
-        <a class="btn" href="/docs/PicklAI.pdf" target="_blank" rel="noopener">Certificate (PDF)</a>
+        <a class="btn" href={`${base}docs/PicklAI.pdf`} target="_blank" rel="noopener">Certificate (PDF)</a>
         <a class="btn" href="https://www.pickl.ai/" target="_blank" rel="noopener">Company Website</a>
-         <a class="btn" href="/docs/Capstone.pdf" target="_blank" rel="noopener">CapstoneProject</a>
+         <a class="btn" href={`${base}docs/Capstone.pdf`} target="_blank" rel="noopener">CapstoneProject</a>
       </div>
     </article>
 
@@ -65,7 +68,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
         Exposure to telecom workflows and product operations; supported tasks across data and software tooling.
       </p>
       <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:8px">
-        <a class="btn" href="/docs/Covenant.pdf" target="_blank" rel="noopener">Certificate (PDF)</a>
+        <a class="btn" href={`${base}docs/Covenant.pdf`} target="_blank" rel="noopener">Certificate (PDF)</a>
         <a class="btn" href="https://www.covenant-mea.com/" target="_blank" rel="noopener">Company Website</a>
       </div>
     </article>

@@ -1,9 +1,11 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Lightbox from "../../components/Lightbox.astro";
+const base = import.meta.env.BASE_URL;
 ---
+
 <BaseLayout title="Courses • Aryan Pradhan" active="accomplishments">
-  <a class="tag" href="/accomplishments">← Back to all categories</a>
+  <a class="tag" href={`${base}accomplishments`}>← Back to all categories</a>
   <h1 class="h1" style="margin-top:10px">Courses</h1>
   <p class="p">
     Certifications and coursework that strengthened my foundations in programming, data science, and AI.

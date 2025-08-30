@@ -1,13 +1,15 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 
+const base = import.meta.env.BASE_URL;
+
 const categories = [
-  { href: "/accomplishments/leadership",        title: "Leadership",              blurb: "Teams, initiatives, roles." },
-  { href: "/accomplishments/internships",       title: "Internships",             blurb: "Industry experiences & programs." },
-  { href: "/accomplishments/communityservice",  title: "Community Service",       blurb: "Service initiatives & impact." },
-  { href: "/accomplishments/researchwork",      title: "Research Work",           blurb: "Papers, presentations, findings." },
-  { href: "/accomplishments/courses",           title: "Courses & Certifications", blurb: "Coursework, tests, certificates." },
-  { href: "/accomplishments/awards",            title: "Competitions & Awards",   blurb: "Awards, distinctions, contests." },
+  { slug: "leadership", title: "Leadership", blurb: "Teams, initiatives, roles." },
+  { slug: "internships", title: "Internships", blurb: "Industry experiences & programs." },
+  { slug: "communityservice", title: "Community Service", blurb: "Service initiatives & impact." },
+  { slug: "researchwork", title: "Research Work", blurb: "Papers, presentations, findings." },
+  { slug: "courses", title: "Courses & Certifications", blurb: "Coursework, tests, certificates." },
+  { slug: "awards", title: "Competitions & Awards", blurb: "Awards, distinctions, contests." },
 ];
 ---
 <BaseLayout title="Accomplishments • Aryan Pradhan" active="accomplishments">
@@ -15,8 +17,8 @@ const categories = [
   <p class="p">Browse by category. Each card links to a page you can fill later.</p>
 
   <div class="grid" style="margin-top:16px">
-    {categories.map(c => (
-      <a class="card" href={c.href}>
+    {categories.map((c) => (
+      <a class="card" href={`${base}accomplishments/${c.slug}`}>
         <div class="kicker">{c.title}</div>
         <p class="p" style="margin-top:8px">{c.blurb}</p>
       </a>
