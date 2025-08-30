@@ -24,7 +24,6 @@ const { src, label = "View Photo" } = Astro.props;
   <!-- Trigger button -->
   <button type="button" class="btn lb-trigger">{label}</button>
 
-  <!-- Overlay -->
   <div class="lightbox-overlay" aria-hidden="true">
     <button class="lightbox-close" aria-label="Close">✕</button>
     <img src={src} alt="proof" />

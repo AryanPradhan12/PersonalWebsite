@@ -2,7 +2,7 @@ export type Category = {
     slug: string;
     title: string;
     blurb: string;
-    items: string[]; // fill later with your entries
+    items: string[];
   };
   
   export const categories: Category[] = [
