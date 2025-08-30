@@ -1,0 +1,67 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+<BaseLayout title="Leadership • Aryan Pradhan" active="accomplishments">
+  <a class="tag" href="/accomplishments">← Back to all categories</a>
+  <h1 class="h1" style="margin-top:10px">Leadership</h1>
+  <p class="p">Teams, initiatives, and roles I’ve led.</p>
+
+  <div class="grid" style="margin-top:16px">
+    <!-- U16 Captain -->
+    <article class="card">
+      <div class="kicker">U16 Captain — Basketball</div>
+      <h3 style="margin:6px 0 8px">Gold • World School Games, Spain (2023)</h3>
+      <p class="p">
+        Led the team as captain; strategy, rotations, and morale—culminating in a championship win.
+      </p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:8px">
+        <!-- Put an image called /proof/wsg-gold.jpg in /public/proof/ if you have it -->
+        <a class="btn" href="/proof/wsg-gold.jpg">Photo proof</a>
+        <!-- Replace with real link if you have a news post/cert -->
+        <a class="btn" href="https://example.com/wsg-2023-article" target="_blank" rel="noopener">Article</a>
+        <a class="btn" href="/docs/wsg-certificate.pdf">Certificate (PDF)</a>
+      </div>
+    </article>
+
+    <!-- Mental-Harmony -->
+    <article class="card">
+      <div class="kicker">Co-founder • Mental-Harmony</div>
+      <h3 style="margin:6px 0 8px">Events + App for mental wellbeing</h3>
+      <p class="p">
+        Led a team to plan and run awareness events; designed and developed a companion app to support students.
+      </p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:8px">
+        <a class="btn" href="https://example.com/mental-harmony" target="_blank" rel="noopener">Website</a>
+        <a class="btn" href="/proof/mental-harmony-event.jpg">Event photo</a>
+        <a class="btn" href="/docs/mental-harmony-report.pdf">Event report (PDF)</a>
+      </div>
+    </article>
+
+    <!-- MYPacademy -->
+    <article class="card">
+      <div class="kicker">Co-founder • MYPacademy</div>
+      <h3 style="margin:6px 0 8px">Curriculum resources site</h3>
+      <p class="p">
+        Led a content team creating notes, videos, solved past papers, and practice questions. Collated and published as a website for wide access.
+      </p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:8px">
+        <a class="btn" href="https://example.com/mypacademy" target="_blank" rel="noopener">Website</a>
+        <a class="btn" href="/proof/mypacademy-home.png">Screenshot</a>
+        <a class="btn" href="/docs/mypacademy-metrics.pdf">Usage metrics (PDF)</a>
+      </div>
+    </article>
+
+    <!-- Happiness Team -->
+    <article class="card">
+      <div class="kicker">Student Government</div>
+      <h3 style="margin:6px 0 8px">Happiness Team</h3>
+      <p class="p">
+        Planned and executed school wellbeing initiatives and campaigns as part of student government.
+      </p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:8px">
+        <a class="btn" href="/proof/happiness-campaign.jpg">Campaign poster</a>
+        <a class="btn" href="/docs/happiness-initiative-summary.pdf">Initiative summary (PDF)</a>
+      </div>
+    </article>
+  </div>
+</BaseLayout>

@@ -1,7 +1,26 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
-<BaseLayout title="Contact • Aryan Pradhan">
+<BaseLayout title="Contact • Aryan Pradhan" active="contact">
   <h1 class="h1">Contact</h1>
-  <p class="p">Add your email or a form here. Since this is separate from your IA, keep it simple (no Firebase needed).</p>
+  <p class="p">If you’d like to connect about research, internships, or projects:</p>
+
+  <div class="card" style="margin-top:16px">
+    <ul style="line-height:2; margin:0; padding-left:18px">
+      <li>Email: <a href="mailto:aryan@example.com">aryan@example.com</a></li>
+      <li>GitHub: <a href="https://github.com/your-username" target="_blank" rel="noopener">your-username</a></li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener">your-handle</a></li>
+    </ul>
+  </div>
+
+  <!-- Optional: a very simple non-backend contact form (replace action with Formspree or similar later) -->
+  <form class="card" style="margin-top:16px" method="POST" action="#">
+    <div style="display:grid; gap:10px">
+      <input name="name" placeholder="Your name" required style="padding:10px;border-radius:10px;border:1px solid #263042;background:#0f172a;color:var(--ink)" />
+      <input name="email" type="email" placeholder="Your email" required style="padding:10px;border-radius:10px;border:1px solid #263042;background:#0f172a;color:var(--ink)" />
+      <textarea name="message" rows="4" placeholder="Your message" required style="padding:10px;border-radius:10px;border:1px solid #263042;background:#0f172a;color:var(--ink)"></textarea>
+      <button class="btn" type="submit" disabled>Send (wire later)</button>
+    </div>
+    <p class="p" style="margin-top:10px">Tip: hook this up later via Formspree or Netlify Forms—no Firebase needed.</p>
+  </form>
 </BaseLayout>

@@ -1,16 +1,24 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { categories } from "../../data/categories";
+
+const categories = [
+  { href: "/accomplishments/leadership",        title: "Leadership",              blurb: "Teams, initiatives, roles." },
+  { href: "/accomplishments/internships",       title: "Internships",             blurb: "Industry experiences & programs." },
+  { href: "/accomplishments/communityservice",  title: "Community Service",       blurb: "Service initiatives & impact." },
+  { href: "/accomplishments/researchwork",      title: "Research Work",           blurb: "Papers, presentations, findings." },
+  { href: "/accomplishments/courses",           title: "Courses & Certifications", blurb: "Coursework, tests, certificates." },
+  { href: "/accomplishments/awards",            title: "Competitions & Awards",   blurb: "Awards, distinctions, contests." },
+];
 ---
-<BaseLayout title="Accomplishments • Table of Contents" active="accomplishments">
+<BaseLayout title="Accomplishments • Aryan Pradhan" active="accomplishments">
   <h1 class="h1">Accomplishments</h1>
-  <p class="p">Browse by category. Each card links to a dedicated page you can fill later.</p>
+  <p class="p">Browse by category. Each card links to a page you can fill later.</p>
 
   <div class="grid" style="margin-top:16px">
-    {categories.map(cat => (
-      <a class="card" href={`/accomplishments/${cat.slug}`}>
-        <div class="kicker">{cat.title}</div>
-        <p class="p" style="margin-top:8px">{cat.blurb}</p>
+    {categories.map(c => (
+      <a class="card" href={c.href}>
+        <div class="kicker">{c.title}</div>
+        <p class="p" style="margin-top:8px">{c.blurb}</p>
       </a>
     ))}
   </div>

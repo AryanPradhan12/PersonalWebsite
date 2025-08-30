@@ -1,7 +1,15 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
-<BaseLayout title="Blog • Aryan Pradhan">
+<BaseLayout title="Blog • Aryan Pradhan" active="blog">
   <h1 class="h1">Blog</h1>
-  <p class="p">Coming soon. You can add MD/MDX later.</p>
+  <p class="p">Short notes on projects, ideas, and learning. Posts coming soon.</p>
+
+  <div class="grid" style="margin-top:16px">
+    <article class="card">
+      <div class="kicker">Placeholder</div>
+      <h3 style="margin:6px 0 8px">Hello World</h3>
+      <p class="p">Your first post could go here. Create more as separate <code>.astro</code> or <code>.md</code> files later.</p>
+    </article>
+  </div>
 </BaseLayout>
