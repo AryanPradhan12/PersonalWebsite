@@ -120,3 +120,23 @@ html { scroll-behavior: smooth; }
     justify-self: center;
   }
 }
+
+/* Contact grid: fit nicely and stretch cards to equal height */
+.grid-contacts{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
+  gap:16px;
+  align-items:stretch;
+}
+
+/* Make each card a flex column so actions sit at the bottom */
+.card-stretch{
+  display:flex;
+  flex-direction:column;
+}
+.card-stretch .card-actions{
+  margin-top:auto;       /* pushes actions to the bottom for equal-height feel */
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}

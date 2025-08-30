@@ -2,25 +2,65 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 <BaseLayout title="Contact • Aryan Pradhan" active="contact">
-  <h1 class="h1">Contact</h1>
-  <p class="p">If you’d like to connect about research, internships, or projects:</p>
+  <a class="tag" href="/">← Back to Home</a>
+  <h1 class="h1" style="margin-top:10px">Contact Me</h1>
+  <p class="p">
+    Feel free to reach out to me through email or Instagram. I also manage initiatives like
+    <b>Mental Harmony</b> and <b>MYPacademy</b>.
+  </p>
 
-  <div class="card" style="margin-top:16px">
-    <ul style="line-height:2; margin:0; padding-left:18px">
-      <li>Email: <a href="mailto:aryan@example.com">aryan@example.com</a></li>
-      <li>GitHub: <a href="https://github.com/your-username" target="_blank" rel="noopener">your-username</a></li>
-      <li>LinkedIn: <a href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener">your-handle</a></li>
-    </ul>
+  <div class="grid-contacts">
+    <!-- Personal Email -->
+    <article class="card card-stretch">
+      <div class="kicker">Email</div>
+      <h3 style="margin:6px 0 8px">Personal Gmail</h3>
+      <p class="p">
+        For academic, project, or collaboration opportunities, email
+        <a href="mailto:aryanrp2007@gmail.com">aryanrp2007@gmail.com</a>.
+      </p>
+    </article>
+
+    <!-- Instagram Personal -->
+    <article class="card card-stretch">
+      <div class="kicker">Social</div>
+      <h3 style="margin:6px 0 8px">Instagram — Personal</h3>
+      <p class="p">
+        Follow <b>@aryan.pradhan2</b> for personal updates and my CS/DS journey.
+      </p>
+      <div class="card-actions">
+        <a class="btn" href="https://www.instagram.com/aryan.pradhan2?igsh=c2lqOW1wY2l6dG9x&utm_source=qr" target="_blank" rel="noopener">
+          Open Instagram
+        </a>
+      </div>
+    </article>
+
+    <!-- Mental Harmony -->
+    <article class="card card-stretch">
+      <div class="kicker">Organization</div>
+      <h3 style="margin:6px 0 8px">Mental Harmony</h3>
+      <p class="p">
+        Student mental health initiative. Instagram: <b>@mentalharmonyorg</b>.
+      </p>
+      <div class="card-actions">
+        <a class="btn" href="https://www.instagram.com/mentalharmonyorg?igsh=bzM5bGlnYzJyZXM1" target="_blank" rel="noopener">
+          Open Instagram
+        </a>
+      </div>
+    </article>
+
+    <!-- MYPacademy -->
+    <article class="card card-stretch">
+      <div class="kicker">Organization</div>
+      <h3 style="margin:6px 0 8px">MYPacademy</h3>
+      <p class="p">
+        Resources for the MYP curriculum. Instagram: <b>@mypacademy.official</b>.
+        For email queries: <a href="mailto:themypacademy@gmail.com">themypacademy@gmail.com</a>.
+      </p>
+      <div class="card-actions">
+        <a class="btn" href="https://www.instagram.com/mypacademy.official?igsh=MXVjdXczOXc4MHZiag==" target="_blank" rel="noopener">
+          Open Instagram
+        </a>
+      </div>
+    </article>
   </div>
-
-  <!-- Optional: a very simple non-backend contact form (replace action with Formspree or similar later) -->
-  <form class="card" style="margin-top:16px" method="POST" action="#">
-    <div style="display:grid; gap:10px">
-      <input name="name" placeholder="Your name" required style="padding:10px;border-radius:10px;border:1px solid #263042;background:#0f172a;color:var(--ink)" />
-      <input name="email" type="email" placeholder="Your email" required style="padding:10px;border-radius:10px;border:1px solid #263042;background:#0f172a;color:var(--ink)" />
-      <textarea name="message" rows="4" placeholder="Your message" required style="padding:10px;border-radius:10px;border:1px solid #263042;background:#0f172a;color:var(--ink)"></textarea>
-      <button class="btn" type="submit" disabled>Send (wire later)</button>
-    </div>
-    <p class="p" style="margin-top:10px">Tip: hook this up later via Formspree or Netlify Forms—no Firebase needed.</p>
-  </form>
 </BaseLayout>
