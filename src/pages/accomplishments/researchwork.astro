@@ -1,8 +1,69 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 ---
-<BaseLayout title="Internships • Aryan Pradhan" active="accomplishments">
+<BaseLayout title="Research Work • Aryan Pradhan" active="accomplishments">
   <a class="tag" href="/accomplishments">← Back to all categories</a>
-  <h1 class="h1" style="margin-top:10px">Internships</h1>
-  <p class="p">Add entries with proof links/images here.</p>
+  <h1 class="h1" style="margin-top:10px">Research Work</h1>
+  <p class="p">
+    A selection of my research spanning applied data science, computer vision, and mathematical modeling.
+    Each card links to the full paper or a PDF.
+  </p>
+
+  <div class="grid" style="margin-top:16px">
+    <!-- Health Cost Prediction -->
+    <article class="card">
+      <div class="kicker">Applied ML • Regression</div>
+      <h3 style="margin:6px 0 8px">Comparison of Polynomial, Ridge, and Random Forest Regressors on Health Cost Prediction</h3>
+      <p class="p">
+        Benchmarks classical and ensemble regressors on health cost datasets; discusses bias–variance trade-offs and feature engineering.
+      </p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:8px">
+        <!-- Replace with your live paper link (e.g., IEEE Xplore / arXiv / proceedings) -->
+        <a class="btn" href="https://ieeexplore.ieee.org/author/374334906922938" target="_blank" rel="noopener">IEEE Profile</a>
+        <a class="btn" href="https://ieeexplore.ieee.org/document/11064656" target="_blank" rel="noopener">Read Online</a>
+        <a class="btn" href="/docs/IEEE.pdf" target="_blank" rel="noopener">View Certificate of Presentation</a>
+      </div>
+    </article>
+
+    <!-- Orange Disease Detection -->
+    <article class="card">
+      <div class="kicker">Computer Vision • Classification</div>
+      <h3 style="margin:6px 0 8px">Exploration of Support Vector Machines and Random Forests in Orange Fruit Disease Detection</h3>
+      <p class="p">
+        Evaluates classical ML pipelines for image classification with discussion on feature extraction and evaluation metrics.
+      </p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:8px">
+        <!-- Replace with your live paper link -->
+        <a class="btn" href="https://medium.com/@aryanrp2007/comparative-evaluation-of-svm-and-random-forest-for-orange-fruit-disease-classification-40646ce2a2d2" target="_blank" rel="noopener">Read Online</a>
+      </div>
+    </article>
+
+    <!-- ML in Aerospace (Literature Review) -->
+    <article class="card">
+      <div class="kicker">Survey • Literature Review</div>
+      <h3 style="margin:6px 0 8px">Evaluation of Machine Learning in Aerospace Engineering</h3>
+      <p class="p">
+        A literature review of ML applications across aerodynamics, structures, controls, and operations with open challenges and trends.
+      </p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:8px">
+        <!-- Replace with your live paper link -->
+        <a class="btn" href="https://medium.com/@aryanrp2007/leveraging-machine-learning-in-spacecraft-construction-a-literature-review-17bc15fa4338" target="_blank" rel="noopener">Read Online</a>
+        <a class="btn" href="/docs/Aerospace.pdf" target="_blank" rel="noopener">View Certificate of Completion</a>
+      </div>
+    </article>
+
+    <!-- Sports Schedule Modeling (Math paper -> PDF) -->
+    <article class="card">
+      <div class="kicker">Mathematical Modeling</div>
+      <h3 style="margin:6px 0 8px">Sport Schedule Modeling Paper</h3>
+      <p class="p">
+        A mathematical modeling study of schedule optimization with constraints (fairness, travel, rest), including formulation and analysis.
+      </p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:8px">
+        <!-- Place the PDF in /public/docs/ and set the filename below -->
+        <a class="btn" href="/docs/IMMC.pdf" target="_blank" rel="noopener">View PDF</a>
+        <a class="btn" href="/docs/UKMC.pdf" target="_blank" rel="noopener">View Certificate</a>
+      </div>
+    </article>
+  </div>
 </BaseLayout>
